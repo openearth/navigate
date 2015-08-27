@@ -78,7 +78,10 @@ setup(
     install_requires=[
         'netCDF4',
         'numpy',
-        'scikit-image'
+        'scikit-image',
+        'docopt',
+        'shapely',
+        'geojson'
     ],
 
     # List additional groups of dependencies here (e.g. development

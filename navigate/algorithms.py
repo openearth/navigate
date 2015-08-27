@@ -41,7 +41,7 @@ def navigate(arrays, options):
     # create a rowcolumn vector
     rowcolumn = np.array(path)
     # lookup path coordinates, not sure why we need to inverse y, guess we have negative pixels??
-    xy = np.c_[x[rowcolumn[:,1]], ymax + ymin-y[rowcolumn[:,0]]]
+    xy = np.c_[x[rowcolumn[:,1]], y[rowcolumn[:,0]]]
 
     results = dict(
         xy=xy,
